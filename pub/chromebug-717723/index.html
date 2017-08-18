@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-size: 10pt;
+        }
+
+        .err {
+            color: red;
+        }
+
+        .buttons {
+            padding: 10px;
+        }
+
+        .progress {
+            height: 20px;
+            background-color: blue;
+        }
+
+        .progress.info {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="buttons">
+    <a id="btnLoadOgg" style="display: none;" href="index.html?audiotype=ogg">Load OGG files</a>
+    <a id="btnLoadMp3" style="display: none;" href="index.html?audiotype=mp3">Load MP3 files</a>
+</div>
+<div class="progress" id="progress" style="width: 0%;">
+    <span class="progress info" id="progress-text"></span>
+</div>
+<p id="log"></p>
+</body>
+<!--<script type='text/javascript' src='scripts/preloadjs-0.6.2.min.js'></script>-->
+<!--<script type='text/javascript' src='scripts/soundjs-0.6.2.min.js'></script>-->
+<script type='text/javascript' src='scripts/preloadjs-0.6.2.combined.js'></script>
+<script type='text/javascript' src='scripts/soundjs-0.6.2.combined.js'></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</html>
