@@ -1,0 +1,91 @@
+<html><head>
+<meta http-equiv="refresh" content="0; url=index.html?page=operations_managing_languages"/>
+<script type="text/javascript">window.location.href="../index.html?page=operations_managing_languages"</script>
+</head><body>
+<div id="container">
+
+<h1>Operations <span id="rightArrow"></span> Managing Languages</h1>
+<p>
+You can perform the following operations on languages: 
+</p>
+<ul>
+<li>Add language</li>
+<li>Delete language</li>
+<li>Edit language
+	<ul>
+	<li>Use language code only or both language-country code</li>
+	<li>Set primary language</li>
+	</ul>
+</li>
+</li>
+</ul>
+
+<h2>Add a language</h2>
+<p>To add a language, proceed as follows:</p>
+<ol>
+	<li>Click <b>Languages</b> button in the <b>Toolbar</b>. <b>Language Settings</b> window opens.</li>
+	<li>Click <b>Add</b> button. <b>Add Language</b> dialog appears.</li>
+	<li>Select language from dropdown.</li>
+	<li>Modify <b>Country specific</b> checkbox if required.</li>
+	<li>Modify <b>Set as primary language</b> checkbox if required.</li>
+	<li>Click <b>OK</b>. The dialog closes. Language is added in the grid.</li>
+	<li>Click <b>OK</b> to close the <b>Language Settings</b> window.</li>
+</ol>
+<p>Now you can edit translations for the added language.</p>
+
+<h2>Delete a language</h2>
+<p>To delete a language, proceed as follows:</p>
+<ol>
+	<li>Click <b>Languages</b> button in the <b>Toolbar</b>. <b>Language Settings</b> window opens.</li>
+	<li>Select language you want to delete.</li>
+	<p class="noteBlock">Note: You can remove only one language at a time. Multi-selection is not supported.</p>
+	<li>Click <b>Remove</b> button. <b>Remove Language</b> dialog appears.</li>
+	<p class="cautionBlock">Caution: All translations in this language will be permanently deleted. You might consider backing up your LHQ project file or exporting resources, especially if you use the translations in the future.</p>
+	<li>Click <b>Yes</b>. The dialog closes. Language is deleted from the grid.</li>
+	<li>Click <b>OK</b> to close the <b>Language Settings</b> window.</li>
+</ol>
+<p>All translations in the removed language were deleted from the LHQ project.</p>
+
+<h2>Change language code</h2>
+
+<p>To change the language code, proceed as follows:</p>
+<ol>
+	<li>Click <b>Languages</b> button in the <b>Toolbar</b>. <b>Language Settings</b> window opens.</li>
+	<li>Select language you want to edit.</li>
+	<li>Click <b>Edit</b> button. <b>Edit Language</b> dialog appears.</li>
+	<li>Modify <b>Country specific</b> checkbox.</li>
+
+	<p><img class="screenshot" src="images/operations_managing_languages_changingCountrySpecific.png" alt="changing country specific checkbox"></p>
+
+	<li>Click <b>OK</b>. Confirmation dialog appears.</li>
+
+	<p><img class="screenshot" src="images/operations_managing_languages_replaceProjectLanguage.png" alt="replace project language"></p>
+
+	<li>Click <b>Yes</b>. The dialog closes. The language is modified.</li>
+	<li>Click <b>OK</b> to close the <b>Language Settings</b> window.</li>
+</ol>
+
+<p class="noteBlock">Note: If need be, you can also change the language itself. Translations from the previous language will be associated to the new language you selected.</p>
+
+<p class="noteBlock">Note: When you change the language code (or even a language as such), and you already have existing generated <span class="mono">resx</span> files, you should delete the file which used its previous setting. Example: The file <span class="mono">Strings.de.resx</span> is no longer needed, because language code was changed from <b>de</b> to <b>de-at</b> and now the file <span class="mono">Strings.de-at.resx</span> is used in the project:</p>
+<p><img class="screenshot" src="images/operations_managing_languages_hasToBeDeleteManually.png" alt="file has to be deleted manually"></p>
+
+<h2>Set primary language</h2>
+
+<p>To change the primary language, proceed as follows:</p>
+<ol>
+	<li>Click <b>Languages</b> button in the <b>Toolbar</b>. <b>Language Settings</b> window opens.</li>
+	<li>Select language which you want to set as primary.</li>
+	<li>Click <b>Edit</b> button. <b>Edit Language</b> dialog appears.</li>
+	<li>Check <b>Set as primary language</b> checkbox.</li>
+	<li>Click <b>OK</b>. Confirmation dialog appears.</li>
+
+	<p><img class="screenshot" src="images/operations_managing_languages_changePrimaryLanguage.png" alt="changing primary language"></p>
+	
+	<li>Click <b>Yes</b>. The dialog closes. The primary language is set.</li>
+	<li>Click <b>OK</b> to close the <b>Language Settings</b> window.</li>
+</ol>
+
+<p>See also: <a class="url" href="index.html?page=ui_language_settings">Language Settings [user interface]</a></p>
+
+</div></body>

@@ -1,0 +1,47 @@
+<html><head>
+<meta http-equiv="refresh" content="0; url=index.html?page=ui_import_resources"/>
+<script type="text/javascript">window.location.href="../index.html?page=ui_import_resources"</script>
+</head><body>
+<div id="container">
+
+<h1>User Interface <span id="rightArrow"></span> Import Resources</h1>
+
+<p><img class="screenshot" src="images/ui_import_resources.png" alt="Localization HQ import resources"><br>
+<span class="illustration">Figure: <b>Import Resources</b> window user interface components</span></p>
+
+<h2>Available importers</h2>
+<p>
+Select one of the available importers to define how the imported files will be processed. At the moment, the following importers are available:
+</p>
+<ul>
+<li>NET resources (<span class="mono">*.resx</span>) files importer</li>
+<li>Microsoft Excel (<span class="mono">*.xlsx</span>) resources importer</li>
+</ul>
+
+<h2>Files to import</h2>
+<p>
+Select files containing resources related to the specified importer, and click <b>OK</b> button to start the import.
+</p>
+
+<h2>Allow import of new languages</h2>
+<p>When checked, all languages which exist in the imported file and are not in the current localization project, will be added to the project.</p>
+<p class="defaultBlock">Default value: Checked</p>
+
+<h2>Import mode</h2>
+<p>The import mode defines, where the imported resources have to be located within the navigation tree.</p>
+<ul>
+	<li><b>Import into new category</b> - Categories and resources imported from file(s) will be added into a new category under project root. The category name will contain current timestamp. Example:</li>
+
+	<p><img class="screenshot" src="images/ui_import_timestamp.png" alt="Localization HQ imported resources folder"><br>
+	<span class="illustration">Figure: Imported resources folder containing the current timestamp</span></p>
+
+	<li><b>Merge with existing resources</b> - Categories and resources imported from file(s) will be merged with existing categories and resources. Existing categories and resources will be overwritten.</li>
+</ul>
+
+<p class="noteBlock">
+Note: Imported resources are added to the project under a new category (if tree project structure is allowed, see <a class="url urlNote" href="index.html?page=ui_project_settings">Project Settings [user interface]</a>). Otherwise, imported resources are added at the bottom of the flat list.
+</p>
+
+<p>See also: <a class="url" href="index.html?page=operations_importing_resources">Importing Resources [operation]</a></p>
+
+</div></body>

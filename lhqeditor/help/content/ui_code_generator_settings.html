@@ -1,0 +1,93 @@
+<html><head>
+<meta http-equiv="refresh" content="0; url=index.html?page=ui_code_generator_settings"/>
+<script type="text/javascript">window.location.href="../index.html?page=ui_code_generator_settings"</script>
+</head><body>
+<div id="container">
+
+<h1>User Interface <span id="rightArrow"></span> Code Generator Settings</h1>
+
+<p>The window contains information and parameters related to code generation.</p>
+
+<p>Generators create files of different extensions. Each extension has its specific parameters. Each extension files can be generated to different folders.</p>
+
+<p><img class="screenshot" src="images/ui_code_generator_settings.png" alt="code generator settings user interface components"></br>
+<span class="illustration">Figure: Code Generator Settings window user interface components</span></p>
+
+<h2>C# Generator</h2>	
+	<ul>
+	<li><b>Generate methods with parameters</b> checkbox - When checked, resources with parameters will have generated methods with parameters (using the defined suffix, see below). If not checked, resources with parameters will have methods generated without parameters.</li>	
+
+	<p class="noteBlock">Note: You should not use resources with parameters when this parameter is unchecked. Otherwise, resource text will be displaying parameter identifiers. Example:</p>
+
+	<p><img class="screenshot" src="images/ui_code_generator_settings_parametrizedResourceAndNonparametrizedMethods.png" alt="parametrized resource and non-parametrized methods"></p>
+
+	<p class="noteBlock">Note: Once you use parametrized resources and parametrized methods, and you want to change this parameter to unchecked, you will have to change the usage of the resource methods manually. Without it, you would get compilation error. Example:</p>
+
+	<p><img class="screenshot" src="images/ui_code_generator_settings_parametrizedResourceCannotCompile.png" alt="parametrized resource and non-parametrized methods compilation error"></p>
+
+	<p class="defaultBlock">Default value: Checked</p>
+
+	<li><b>Suffix for methods with parameters</b> text field - If a resource has parameters, the method name for the generated resource will have the selected suffix. Example: Method without parameter: <span class="mono">Title()</span>, method with parameters: <span class="mono">TitleWithParams(...)</span>.</li>
+
+	<p class="defaultBlock">Default value: "WithParams"</p>
+
+	<li><b>Return primary language text on missing foreign translation</b> checkbox - If checked, when a resource translation is missing in some language, the primary language text will be returned. Otherwise, empty string will be returned for this language.</li>
+
+	<p class="defaultBlock">Default value: Unchecked</p>
+
+	<li><b>Output folder</b> text field - Output folder, where the <span class="mono">C#</span> generated files will be stored.</li>
+
+	<p class="defaultBlock">Default value: "Resources"</p>
+
+	<li><b>Use expression body syntax</b> checkbox - When checked, expression body syntax will be used, which reduces size of the generated code. Examples:</li>	
+
+	<p><img class="screenshot" src="images/ui_code_generator_settings_expressionBody.png" alt="code using expression body syntax"></br>
+	<span class="illustration">Figure: Code example using expression body syntax</span></p>
+
+	<p><img class="screenshot" src="images/ui_code_generator_settings_withoutExpressionBodySyntax.png" alt="code without expression body syntax"></br>
+	<span class="illustration">Figure: Code example without expression body syntax</span></p>
+
+	<p class="noteBlock">Note: Requires C# language level 7.0 or higher.</p>
+
+	<p class="defaultBlock">Default value: Unchecked</p>
+
+	<li><b>Enabled</b> - When checked, <span class="mono">C#</span> files are generated automatically every time the project is saved.</li>
+
+	<p class="defaultBlock">Default value: Checked</p>
+
+	<p class="noteBlock">Note: After the value is changed to checked, the files are re-generated.</p>
+	</ul>
+
+<h2>ResX Generator</h2>	
+
+	<ul>
+	<li><b>File name for primary language includes language code</b> checkbox - When checked, primary language <span class="mono">resx</span> file name will also contain the language code. When unchecked, the file name will not contain the language code.</li>
+
+	<p class="noteBlock">Note: Other languages <span class="mono">resx</span> file names always contain their language code.</p>
+
+	<p class="noteBlock">Note: When you change this setting, and you already have existing generated <span class="mono">resx</span> files, you should delete the file which used its previous setting. Example:</p>
+
+	<p><img class="screenshot" src="images/ui_code_generator_settings_withoutPrimaryLanguageCode.png" alt="file name for primary language includes language code"></p>
+
+	<p class="defaultBlock">Default value: Checked</p>
+
+	<li><b>Output folder</b> text field - Output folder, where the <span class="mono">resx</span> generated files will be stored.</li>
+
+	<p class="defaultBlock">Default value: "Resources"</p>
+
+	<li><b>Enabled</b> - When checked, <span class="mono">resx</span> files are generated automatically every time the project is saved.</li>
+
+	<p class="defaultBlock">Default value: Checked</p>
+
+	<p class="noteBlock">Note: After the value is changed to checked, the files are re-generated.</p>
+	</ul>
+
+<p><b>Reset to Default</b> button - Sets default values for the parameters.</p>
+
+<div id="multipleCodeGenerators"></div>
+
+<p>See also: <a class="url" href="index.html?page=operations_creating_a_new_localization_file">Creating a New Localization File [operation]</a></p>
+<p>See also: <a class="url" href="index.html?page=operations_setting_code_generator">Setting Code Generator [operation]</a></p>
+<p>See also: <a class="url" href="index.html?page=ui_new_lhq_file">New Localization File [user interface]</a></p>
+
+</div></body>

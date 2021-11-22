@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="sk" class="no-js">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47358896-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47358896-3');
+    </script>
+    <meta charset="utf-8">
+    <title>Localization HQ Editor - Visual Studio Extension for .NET Developers</title>
+    <meta name="description"
+        content="Localization HQ Editor, LHQ Editor, LHQ, VS Extension, C#, VBNET, Visual Studio Extension, ScaleHQ Solutions">
+    <meta name="author" content="ScaleHQ Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700|Muli:400,600,900&display=swap" rel="stylesheet">
+
+    <script>
+        !function (e, n, A) { function o(e, n) { return typeof e === n } function t() { var e, n, A, t, a, i, l; for (var f in r) if (r.hasOwnProperty(f)) { if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (A = 0; A < n.options.aliases.length; A++)e.push(n.options.aliases[A].toLowerCase()); for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)i = e[a], l = i.split("."), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? "" : "no-") + l.join("-")) } } function a(e) { var n = u.className, A = Modernizr._config.classPrefix || ""; if (c && (n = n.baseVal), Modernizr._config.enableJSClass) { var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)"); n = n.replace(o, "$1" + A + "js$2") } Modernizr._config.enableClasses && (n += " " + A + e.join(" " + A), c ? u.className.baseVal = n : u.className = n) } function i(e, n) { if ("object" == typeof e) for (var A in e) f(e, A) && i(A, e[A]); else { e = e.toLowerCase(); var o = e.split("."), t = Modernizr[o[0]]; if (2 == o.length && (t = t[o[1]]), "undefined" != typeof t) return Modernizr; n = "function" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? "" : "no-") + o.join("-")]), Modernizr._trigger(e, n) } return Modernizr } var s = [], r = [], l = { _version: "3.5.0", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var A = this; setTimeout(function () { n(A[e]) }, 0) }, addTest: function (e, n, A) { r.push({ name: e, fn: n, options: A }) }, addAsyncTest: function (e) { r.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = l, Modernizr = new Modernizr; var f, u = n.documentElement, c = "svg" === u.nodeName.toLowerCase(); !function () { var e = {}.hasOwnProperty; f = o(e, "undefined") || o(e.call, "undefined") ? function (e, n) { return n in e && o(e.constructor.prototype[n], "undefined") } : function (n, A) { return e.call(n, A) } }(), l._l = {}, l.on = function (e, n) { this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () { Modernizr._trigger(e, Modernizr[e]) }, 0) }, l._trigger = function (e, n) { if (this._l[e]) { var A = this._l[e]; setTimeout(function () { var e, o; for (e = 0; e < A.length; e++)(o = A[e])(n) }, 0), delete this._l[e] } }, Modernizr._q.push(function () { l.addTest = i }), Modernizr.addAsyncTest(function () { function e(e, n, A) { function o(n) { var o = n && "load" === n.type ? 1 == t.width : !1, a = "webp" === e; i(e, a && o ? new Boolean(o) : o), A && A(n) } var t = new Image; t.onerror = o, t.onload = o, t.src = n } var n = [{ uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" }, { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" }, { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" }, { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" }], A = n.shift(); e(A.name, A.uri, function (A) { if (A && "load" === A.type) for (var o = 0; o < n.length; o++)e(n[o].name, n[o].uri) }) }), t(), a(s), delete l.addTest, delete l.addAsyncTest; for (var p = 0; p < Modernizr._q.length; p++)Modernizr._q[p](); e.Modernizr = Modernizr }(window, document);
+    </script>
+
+    <script type="text/javascript">
+        var queuedDomReadyFns = []; var domReadyFlag = false; var eventAttached = false; var domIsReady = (function (domIsReady) {
+            var isBrowserIeOrNot = function () { return (!document.attachEvent || typeof document.attachEvent === "undefined" ? 'not-ie' : 'ie'); }; function flushQueue() { domReadyFlag = true; var fns = queuedDomReadyFns.splice(0); for (var i = 0; i < fns.length; i++) { setTimeout(function (fn) { fn.call(); }, 0, fns[i]); } }
+            domIsReady = function (callback) {
+                if (callback && typeof callback === 'function') {
+                    if (domReadyFlag) { return callback(); }
+                    queuedDomReadyFns.push(callback); if (!eventAttached) { eventAttached = true; if (isBrowserIeOrNot() !== 'ie') { document.addEventListener("DOMContentLoaded", function () { flushQueue(); }); } else { document.attachEvent("onreadystatechange", function () { if (document.readyState === "complete") { flushQueue(); } }); } }
+                } else { console.error('The callback is not a function!'); }
+            }; return domIsReady;
+        })(domIsReady || {});
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="nav-bar" class="headerContent">
+            <div class="logo">
+                <img src="images/icon.png" height="32" width="32">
+                <span id="icon-header">Localization HQ Editor</span>
+            </div>
+            <nav role="navigation" id="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="features.html">Features</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="download.html">Download</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="license.html">License</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="help/index.html" target="_blank">Help</a>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="support.html">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="support">
+            <ul class="vs-support">
+                <li>
+                    <span>Available for:</span></li>
+                <li>
+                    <img src="images/vsicon-2015.png">
+                    <span>Visual Studio 2015</span>
+                </li>
+                <li>
+                    <img src="images/vsicon-2017.png">
+                    <span>Visual Studio 2017</span>
+                </li>
+                <li>
+                    <img src="images/vsicon-2019.png">
+                    <span>Visual Studio 2019</span>
+                </li>
+            </ul>
+            <div class="partnerLogo">
+                <a href="https://marketplace.visualstudio.com/items?itemName=scalehqsolutions.lhqeditor"
+                    target="_blank">
+                    <img src="images/vs_partner_logo.jpg" alt="Visual Studio Marketplace" width="105" height="45"
+                        id="vs-partner">
+                </a>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="heading">
+                <h1>Localization HQ Editor</h1>
+                <h2>Download Visual Studio Extension</h2>
+            </div>
+            <div class="container">
+                <div class="col">
+                    <h3>Extension supports the following Visual Studio versions</h3>
+
+                    <ul class="vs-support light">
+                        <li>
+                            <img src="images/vsicon-2015.png">
+                            <span>Visual Studio 2015</span>
+                        </li>
+                        <li>
+                            <img src="images/vsicon-2017.png">
+                            <span>Visual Studio 2017</span>
+                        </li>
+                        <li>
+                            <img src="images/vsicon-2019.png">
+                            <span>Visual Studio 2019</span>
+                        </li>
+                    </ul>
+
+                    <h3>
+                        For all Visual Studio editions
+                    </h3>
+                    <ul id="all-editions">
+                        <li>
+                            <span>&#10004;&nbsp;&nbsp;Community</span>
+                        </li>
+                        <li>
+                            <span>&#10004;&nbsp;&nbsp;Professional</span>
+                        </li>
+                        <li>
+                            <span>&#10004;&nbsp;&nbsp;Enterprise</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>
+                        Download on Microsoft Marketplace
+                    </h3>
+                    <div class="partnerLogo">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=scalehqsolutions.lhqeditor"
+                            target="_blank">
+                            <img src="images/vs_partner_logo.jpg" alt="Visual Studio Marketplace" width="105"
+                                height="45" id="vs-partner">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footerContent">
+            <span>© <span id="year">2020</span> ScaleHQ Solutions. All rights reserved.</span>
+            <span>info&commat;lhqeditor.com</span>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

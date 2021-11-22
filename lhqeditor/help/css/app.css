@@ -1,0 +1,535 @@
+body {
+  font-family: 'robotoregular';
+  font-size: 15px;
+}
+
+.mono {
+  font-family: 'Courier New', Courier, monospace;
+  color: #303030;
+  background-color: #e8e8e8;
+  text-shadow: 1px 1px #c0c0c0;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-color: #e8e8e8;
+  border-radius: 8px;
+}
+
+.illustration {
+  margin: 0 0 0px 32px;
+  font-style: italic;
+  font-size: 12;
+  color: #A0A0A0;
+}
+
+/* tie iste vlastnosti ako illustration okrem margin (pouziva sa v pripade ze obrazok je vnutri note) */
+
+.illustrationNote {
+  margin: 0 0 0px 0px;
+  font-style: italic;
+  font-size: 12;
+  color: #A0A0A0;
+}
+
+/* text je v ramci listu pod obrazkom, vtedy je potrebny este dolny margin */
+
+.illustrationList {
+  margin: 0px 0 16px 0px;
+  font-style: italic;
+  font-size: 12;
+  color: #A0A0A0;
+}
+
+.screenshot {
+  margin: 0px 32px 0px 32px;
+  -moz-box-shadow: 0 0 1px 0 #C0C0C0;
+  -webkit-box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+  box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+}
+
+/* tie iste vlastnosti ako screenshot okrem margin (pouziva sa v pripade ze obrazok je vnutri note) */
+
+.screenshotNote {
+  margin: 0px 0px 0px 0px;
+  -moz-box-shadow: 0 0 1px 0 #C0C0C0;
+  -webkit-box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+  box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+}
+
+/* obrazok je v ramci listu, vtedy je potreby horny margin */
+
+.screenshotList {
+  margin: 16px 0px 0px 0px;
+  -moz-box-shadow: 0 0 1px 0 #C0C0C0;
+  -webkit-box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+  box-shadow: 0 0 1px 0 #C0C0C0;
+  ;
+}
+
+/* mala ikonka v ramci kratkeho textu*/
+
+.screenshotTextIcon {
+  vertical-align: middle
+}
+
+a {
+  text-decoration: none;
+  color: #257373;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #257373;
+  font-weight: 900;
+}
+
+.url {
+  text-decoration: none;
+  color: #808080;
+  font-weight: 900;
+}
+
+.url:hover {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+#keyboardShortcuts ul>li {
+  margin: 8px 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+p {}
+
+#top-logo p {
+  color: #ffffff !important;
+}
+
+#topics h1 {
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 6px 8px 6px 16px;
+  border-left: 4px solid;
+}
+
+#topics h1:hover {
+  background-color: #dddddd;
+}
+
+#topics h2 {
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 6px 8px 6px 32px;
+  border-left: 0px solid;
+}
+
+#topics h2:hover {
+  background-color: #dddddd;
+}
+
+.center {
+  text-align: center;
+}
+
+.play {
+  font-family: 'play';
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently not supported by any browser */
+  cursor: default;
+}
+
+.footerNote {
+  font-size: 12px;
+  text-align: center;
+  color: #404040;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+/* NAVBAR -------------------------------------------------------------------------------------------------*/
+
+/* tree y shift */
+
+#tree-nav {
+  position: relative;
+  top: 0px;
+  font-size: 14px;
+}
+
+/* margin and padding */
+
+#side-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* li background */
+
+#side-nav li {
+  background-color: #fff;
+  list-style: none;
+  padding: 16px 16px 16px 32px;
+}
+
+/* level 1 = bold */
+
+.li1 {
+  /* font-weight: bold; */
+  border-left: 6px solid;
+  margin-left: 3px;
+}
+
+#side-nav ul>ul>li {
+  padding: 12px 16px 12px 32px;
+}
+
+/* hide all levels > 1 */
+
+#side-nav ul>ul {
+  display: none;
+}
+
+/* styling for levels >= 2 */
+
+#side-nav ul>ul>li {
+  padding-left: 48px;
+  /*font-style: italic;*/
+}
+
+/* styling for levels >= 3 */
+
+#side-nav ul>ul>ul>li {
+  padding-left: 64px;
+}
+
+/* li hover */
+
+#side-nav li:hover {
+  background-color: #dddddd;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* LAYOUT -------------------------------------------------------------------------------------------------*/
+
+#wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+#top-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #115a91;
+  color: #fff;
+  z-index: 1;
+  -moz-box-shadow: 0 0 8px 0 black;
+  -webkit-box-shadow: 0 0 8px 0 black;
+  box-shadow: 0 0 8px 0 black;
+}
+
+#side-nav {
+  position: fixed;
+  width: 256px;
+  height: calc(100vh - 64px);
+  height: -o-calc(100vh - 64px);
+  /* opera */
+  height: -webkit-calc(100vh - 64px);
+  /* google, safari */
+  height: -moz-calc(100vh - 64px);
+  /* firefox */
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  background-color: #fff;
+  top: 64px;
+}
+
+#content-wrapper {
+  margin: 64px 0 0 256px;
+  padding: 0 40px;
+  overflow-y: scroll;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  height: calc(100vh - 64px);
+  height: -o-calc(100vh - 64px);
+  /* opera */
+  height: -webkit-calc(100vh - 64px);
+  /* google, safari */
+  height: -moz-calc(100vh - 64px);
+  /* firefox */
+}
+
+#top-logo {
+  width: 256px;
+  height: 64px;
+  vertical-align: middle;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-margin-before: 0px;
+  margin-left: 32px;
+  font-family: 'play';
+  font-size: 19px;
+}
+
+#top-title {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  left: 256px;
+  top: 0;
+  -webkit-margin-before: 0px;
+  margin-left: 32px;
+  font-size: 18px;
+}
+
+/* floating window containg the topics of the current page */
+
+#topics {
+  position: absolute;
+  border-color: #ddd;
+  border-radius: 16px;
+  padding: 16px;
+  width: 200px;
+  top: 80px;
+  right: 32px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 0 16px 0 #C0C0C0;
+  -webkit-box-shadow: 0 0 16px 0 #C0C0C0;
+  ;
+  box-shadow: 0 0 16px 0 #C0C0C0;
+  ;
+}
+
+#topics:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#content-help {
+  margin-left: -16px;
+  margin-right: 200px;
+}
+
+/* NOTES -------------------------------------------------------------------------------------------------*/
+
+/* NOTEs generic settings */
+
+.noteBlock, .licenseBlock, .tipBlock, .defaultBlock, .warningBlock, .cautionBlock, .psBlock, .scalaBlock, .purposeBlock {
+  display: table;
+  /* toto zakomentovat ak to chceme mat na cely riadok */
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 7px 7px 7px 30px;
+  /* posledne cislo = ako daleko bude text od kraja */
+  margin: 18px 0px 18px 0px;
+  font-size: 12px;
+}
+
+/* NOTE INFO */
+
+.noteBlock {
+  color: #ffffff;
+  border: solid 1px rgb(17, 169, 204);
+  /* #70C0E7;*/
+  background-color: rgb(87, 181, 227);
+  /* #E5F3FB; */
+  background: rgb(87, 181, 227) url('icons/information.png') no-repeat 7px 7px;
+}
+
+.noteBlock:hover {
+  background: rgb(87, 181, 227) url('icons/information-hover.png') no-repeat 7px 7px;
+}
+
+.urlNote {
+  color: #115a91 !important;
+}
+
+.urlTip {
+  color: rgb(127, 103, 42) !important;
+}
+
+/* LICENSE REQUIRED ZAMOK */
+
+.licenseBlock {
+  color: #000000;
+  border: solid 1px #ed635b;
+  background-color: #ffe5d8;
+  background: #ffe5d8 url('icons/lock.png') no-repeat 7px 7px;
+}
+
+.licenseBlock:hover {
+  background: #ffe5d8 url('icons/lock-unlock.png') no-repeat 7px 7px;
+}
+
+/* TIP ZIAROVKA */
+
+.tipBlock {
+  color: #000000;
+  border: solid 1px rgb(255, 206, 85);
+  /* #E7C070; */
+  background-color: rgb(255, 241, 168);
+  /* #FBF3E5; */
+  background: rgb(255, 241, 168) url('icons/light-bulb.png') no-repeat 7px 7px;
+}
+
+.tipBlock:hover {
+  background: rgb(255, 241, 168) url('icons/light-bulb-bright.png') no-repeat 7px 7px;
+}
+
+/* DEFAULT */
+
+.defaultBlock {
+  color: #ffffff;
+  border: solid 1px rgb(140, 196, 116);
+  /* #6eb872; */
+  background-color: rgb(160, 212, 104);
+  /* #d9f4ce; */
+  background: rgb(160, 212, 104) url('icons/tick-circle.png') no-repeat 7px 7px;
+}
+
+.defaultBlock:hover {
+  background: rgb(160, 212, 104) url('icons/tick-circle-hover.png') no-repeat 7px 7px;
+}
+
+/* PURPOSE */
+
+.purposeBlock {
+  color: #000000;
+  border: solid 1px #C0C0C0;
+  background-color: #f0f0f0;
+  background: #f0f0f0 url('icons/target.png') no-repeat 7px 7px;
+}
+
+.purposeBlock:hover {
+  background: #f0f0f0 url('icons/target-hover.png') no-repeat 7px 7px;
+}
+
+/* WARNING VYKRICNIK YELLOW */
+
+.warningBlock {
+  color: #000000;
+  font-weight: 600;
+  border: solid 1px #000000;
+  background-color: rgb(249, 226, 0);
+  background: rgb(249, 226, 0) url('icons/exclamation.png') no-repeat 7px 7px;
+}
+
+.warningBlock:hover {
+  background: rgb(249, 226, 0) url('icons/exclamation-hover.png') no-repeat 7px 7px;
+}
+
+/* CAUTION VYKRICNIK CERVENY */
+
+.cautionBlock {
+  color: #ffffff;
+  font-weight: 600;
+  border: solid 1px rgb(223, 81, 56);
+  /* #FF0000; */
+  background-color: rgb(228, 111, 97);
+  /* #B00000; */
+  background: rgb(228, 111, 97) url('icons/exclamation-red.png') no-repeat 7px 7px;
+}
+
+.cautionBlock:hover {
+  background: rgb(228, 111, 97) url('icons/exclamation-red-hover.png') no-repeat 7px 7px;
+}
+
+/* SCRIPTS -------------------------------------------------------------------------------------------------*/
+
+/* POWERSHELL */
+
+.psBlock {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  border: solid 1px rgb(24, 131, 215);
+  background-color: rgb(1, 36, 86);
+  background: rgb(1, 36, 86) url('icons/iconPowerShell.png') no-repeat 5px 5px;
+}
+
+.psBlock:hover {
+  background: rgb(1, 36, 86) url('icons/iconPowerShell-hover.png') no-repeat 5px 5px;
+}
+
+/* SCALA */
+
+.scalaBlock {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  border: solid 1px rgb(60, 61, 56);
+  background-color: rgb(39, 40, 34);
+  background: rgb(39, 40, 34) url('icons/iconScala.png') no-repeat 5px 5px;
+}
+
+.scalaBlock:hover {
+  background: rgb(39, 40, 34) url('icons/iconScala-hover.png') no-repeat 5px 5px;
+}
+
+#keyboardShortcuts>table {
+  margin-left: 20px;
+}
+
+#keyboardShortcuts>table>tbody>tr>td {
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
