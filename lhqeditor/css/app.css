@@ -110,6 +110,7 @@ a, a:visited, a:hover, a:active {
     #menutoggle {
         display: none;
     }
+
     #nav {
         height: 45px;
         position: relative;
@@ -117,6 +118,7 @@ a, a:visited, a:hover, a:active {
         border: 0;
         border-radius: 4px;
     }
+
     #nav ul {
         display: block !important;
         float: left;
@@ -129,6 +131,7 @@ a, a:visited, a:hover, a:active {
         top: 0;
         overflow: visible;
     }
+
     #nav li {
         float: left;
         margin: 0 5px;
@@ -140,21 +143,26 @@ a, a:visited, a:hover, a:active {
         border: 0;
         overflow: visible;
     }
+
     #nav li:first-child {
         margin-left: 4px;
         border-left: 0;
     }
+
     #nav li.last {
         border-right: 0;
     }
+
     #nav li.right {
         float: right;
         margin-right: 4px;
         border-right: 0;
     }
+
     #nav li.onmobile {
         display: none;
     }
+
     #nav a {
         float: left;
         margin: 0;
@@ -170,10 +178,12 @@ a, a:visited, a:hover, a:active {
         border-radius: 3px;
         cursor: pointer;
     }
+
     #nav a:hover, #nav a.is-active {
         background-color: #68c1c1;
         color: #fff;
     }
+
     #nav li:hover {
         z-index: 11;
     }
@@ -363,6 +373,27 @@ main {
     height: 65px;
     padding: 10px 8%;
     background: #fff;
+}
+
+.support-light {
+    background: transparent;
+    -webkit-justify-content: inherit;
+    justify-content: inherit;
+}
+
+.vs-support {
+    -webkit-align-self: center;
+    align-self: center;
+    padding: 0;
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vs-support span {
+    font-size: small;
+    margin-top: 2px;
 }
 
 ul.vs-support {
@@ -558,49 +589,61 @@ footer .footerContent span {
     #header.hide-other~main, #footer.hide-other {
         display: none;
     }
+
     .headerContent {
         display: -webkit-flex;
         display: flex;
         -webkit-justify-content: space-between;
         justify-content: space-between;
     }
+
     #menutoggle.is-active .icon-bar:nth-of-type(1) {
         -webkit-transform: translateY(9px) rotate(45deg);
         -ms-transform: translateY(9px) rotate(45deg);
         transform: translateY(9px) rotate(45deg);
     }
+
     #menutoggle.is-active .icon-bar:nth-of-type(2) {
         opacity: 0;
     }
+
     #menutoggle.is-active .icon-bar:nth-of-type(3) {
         -webkit-transform: translateY(-9px) rotate(-45deg);
         -ms-transform: translateY(-9px) rotate(-45deg);
         transform: translateY(-9px) rotate(-45deg);
     }
+
     #menutoggle.is-active+ul {
         display: block;
         padding: 0 8%;
     }
+
     #menutoggle.is-active+ul li .divider {
         display: none;
     }
+
     h3 {
         margin-top: 0;
     }
+
     .mainContent .container {
         -webkit-flex-direction: column;
         flex-direction: column;
     }
+
     .mainContent .container .col:nth-of-type(n), .mainContent .container .col .preview {
         width: 100%;
     }
+
     .mainContent .container .col:nth-of-type(2) {
         margin-top: 30px;
     }
+
     .mainContent .container .col .preview img {
         width: 100%;
         max-width: 915px;
     }
+
     .downloadBtn {
         text-align: left;
     }
@@ -615,6 +658,7 @@ footer .footerContent span {
         -webkit-flex: 1 0 auto;
         flex: 1 0 auto;
     }
+
     .support {
         -webkit-justify-content: space-between;
         justify-content: space-between;
@@ -622,24 +666,30 @@ footer .footerContent span {
         background: none;
         padding: 20px 8% 30px;
     }
+
     ul.vs-support {
         text-align: left;
     }
+
     ul.vs-support li {
         display: block;
         margin-left: 0;
     }
+
     ul.vs-support li>img {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
+
     .partnerLogo {
         -webkit-align-self: center;
         align-self: center;
     }
+
     .mainContent .container {
         padding-top: 20px;
     }
+
     footer .footerContent span {
         font-size: 12px;
     }
@@ -649,6 +699,7 @@ footer .footerContent span {
     .logo {
         max-width: 50%;
     }
+
     span#icon-header {
         font-size: 20px;
     }
@@ -799,6 +850,7 @@ table#prizetable tr>td>span.free {
     .planContainer {
         margin: 0;
     }
+
     .planContainer .plan {
         width: 100%;
         margin: 1em 0;
