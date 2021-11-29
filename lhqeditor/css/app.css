@@ -432,7 +432,7 @@ ul.vs-support li>span {
 }
 
 #vs-partner:hover, #vs-partner:active {
-    box-shadow: 0 1px 5px #000;
+    /* box-shadow: 0 1px 5px #000; */
 }
 
 .mainContent .container {
